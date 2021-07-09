@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotasService", "NotasService\NotasService.csproj", "{221D3FC0-5E69-499D-9C7C-690E97DCE41B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{221D3FC0-5E69-499D-9C7C-690E97DCE41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{221D3FC0-5E69-499D-9C7C-690E97DCE41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{221D3FC0-5E69-499D-9C7C-690E97DCE41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{221D3FC0-5E69-499D-9C7C-690E97DCE41B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A2313B7-ED64-46CF-9D19-70DC51184A16}
+	EndGlobalSection
+EndGlobal
