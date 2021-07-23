@@ -47,6 +47,7 @@ namespace NotasService
             services.AddTransient<INotasSearchByDateService, NotasSearchByDateService>();
             services.AddTransient<IJwtAuthManager, JwtAuthManager>();
             services.AddTransient<IAuthenticationService, AuthenticationService>();
+            services.AddTransient<ILoginAddService, LoginAddService>();
             
             //Cors
             services.AddCors(options => options.AddPolicy("AllowWebapp",

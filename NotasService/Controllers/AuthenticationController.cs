@@ -18,9 +18,11 @@ namespace NotasService.Controllers
         public class AuthenticationController : ControllerBase
         {
             private IAuthenticationService authenticationService;
-            public AuthenticationController(IAuthenticationService authenticationService)
+            private ILoginAddService loginAddService;
+            public AuthenticationController(IAuthenticationService authenticationService, ILoginAddService loginAddService)
             {
                 this.authenticationService = authenticationService;
+                this.loginAddService = loginAddService;
             }
 
             [Route("login")]
@@ -35,6 +37,14 @@ namespace NotasService.Controllers
                     return Ok(resp);
                 }
                 return BadRequest("Contraseña o Usuario incorrecto");
+            }
+
+            
+            [Route("addUser")]
+            [HttpPost]
+            public ServiceResponse Post([FromBody] User user)
+            {
+                return this.loginAddService.Execute(user);
             }
 
             //[CustomAuthorize]
